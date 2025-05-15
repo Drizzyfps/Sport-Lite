@@ -1,0 +1,102 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #228B22; /* Verde campo de fútbol */
+    margin: 0;
+    padding: 20px;
+    color: #fff; /* Texto blanco para contraste */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: radial-gradient(circle, rgba(34, 139, 34, 0.7) 0%, rgba(0, 100, 0, 0.7) 70%); /* Degradado radial sutil */
+}
+
+.container {
+    max-width: 800px; /* Contenedor más pequeño */
+    background-color: rgba(255, 255, 255, 0.9); /* Blanco semi-transparente */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    color: #228B22; /* Verde campo */
+    margin-bottom: 30px;
+    border-bottom: 3px solid #fff; /* Borde inferior más delgado */
+    padding-bottom: 15px;
+    font-size: 2.2em; /* Título más pequeño */
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Items más pequeños */
+    gap: 20px; /* Menos espacio entre items */
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo claro para la cuadrícula */
+}
+
+.dashboard-item {
+    background-color: #25a357; /* Verde más brillante para los items */
+    border: 2px solid #fff; /* Borde más delgado */
+    border-radius: 10px; /* Bordes menos redondeados */
+    padding: 20px; /* Menos padding */
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em; /* Letras más pequeñas */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 140px; /* Items más bajos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-item:hover {
+    background-color: #1e7e34; /* Verde oscuro al pasar el ratón */
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.dashboard-item span {
+    font-size: 2.5em; /* Iconos más pequeños */
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Iconos específicos */
+.dashboard-item:nth-child(1) span { /* Eliminar Torneos */ content: '🏆'; }
+.dashboard-item:nth-child(2) span { /* Eliminar Noticias */ content: '📰'; }
+.dashboard-item:nth-child(3) span { /* Diseño Responsive */ content: '📱'; font-size: 2em; }
+.dashboard-item:nth-child(4) span { /* Mis Torneos */ content: '⚽'; }
+.dashboard-item:nth-child(5) span { /* Editar Torneo */ content: '✏️'; }
+.dashboard-item:nth-child(6) span { /* Editar Noticia */ content: '✍️'; }
+.dashboard-item:nth-child(7) span { /* Confirmación por Correo */ content: '📧'; }
+.dashboard-item:nth-child(8) span { /* Historial de Pagos */ content: '💰'; }
+.dashboard-item:nth-child(9) span { /* Confirmar Reservas */ content: '✅'; }
+.dashboard-item:nth-child(10) span { /* Moderación de Reseñas */ content: '🛡️'; }
+.dashboard-item:nth-child(11) span { /* Estadísticas de Torneo */ content: '📊'; }
+.dashboard-item:nth-child(12) span { /* Cambio de Rol */ content: '⚙️'; }
+
+/* Estilos para enlaces dentro de las páginas de sección */
+.container a {
+    color: #25a357;
+    text-decoration: none; /* Quitamos el subrayado por defecto */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.container a:hover {
+    color: #1e7e34;
+    /* Puedes añadir otro efecto al pasar el ratón si lo deseas, por ejemplo: */
+    /* background-color: rgba(0, 0, 0, 0.05); */
+}
