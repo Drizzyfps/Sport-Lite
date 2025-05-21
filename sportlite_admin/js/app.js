@@ -101,8 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return fieldHtml;
     }
 
-
-    // --- Modal Logic ---
     function openModalForCreate(type) {
         currentOperation = 'create';
         currentItemType = type;
