@@ -1,0 +1,472 @@
+:root {
+  --azul: #0a2d4a;
+  --verde: #a6f71d;
+  --fondo: #fefbf5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--fondo);
+  color: var(--azul);
+}
+
+header {
+  background-color: var(--azul);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 48px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  background-color: var(--verde);
+  padding: 60px 20px;
+  color: var(--azul);
+}
+
+.hero-logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.hero .btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: var(--azul);
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+h2 {
+  color: var(--azul);
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid var(--verde);
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: var(--azul);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-logo {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.titulo-centro {
+  text-align: center;
+  color: var(--azul);
+  margin-bottom: 20px;
+}
+
+.torneo-detalle {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.torneo-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 2px solid var(--verde);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.torneo-img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.torneo-descripcion {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--azul);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.torneo-botones {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn-volver,
+.btn-inscribirse {
+  background-color: var(--azul);
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-volver:hover,
+.btn-inscribirse:hover {
+  background-color: #062133;
+}
+
+.formulario-contenedor {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid var(--verde);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario input[type="text"],
+.formulario textarea,
+.formulario input[type="file"] {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.formulario .btn {
+  background-color: var(--azul);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario .btn:hover {
+  background-color: #062133;
+}
+
+.formulario-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formulario-vertical label {
+  font-weight: bold;
+  color: var(--azul);
+  margin-top: 10px;
+}
+
+.formulario-vertical input[type="text"],
+.formulario-vertical textarea,
+.formulario-vertical input[type="file"] {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  background-color: #fff;
+}
+
+.formulario-vertical .btn {
+  margin-top: 20px;
+  background-color: var(--azul);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-vertical .btn:hover {
+  background-color: #062133;
+}
+
+.resultado-mensaje {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #fdfdfd;
+}
+
+.caja-resultado {
+  max-width: 500px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.caja-resultado.exito {
+  border: 2px solid var(--verde);
+  background-color: #eaffea;
+  color: var(--azul);
+}
+
+.caja-resultado.error {
+  border: 2px solid red;
+  background-color: #ffecec;
+  color: red;
+}
+
+.caja-resultado .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: var(--azul);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.detalle-noticia {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.detalle-noticia h1 {
+  color: var(--azul);
+  margin-top: 20px;
+}
+
+.detalle-noticia .fecha {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.detalle-noticia .descripcion {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: left;
+  margin: 20px auto;
+}
+
+.noticia-imagen {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.mensaje-exito {
+  background-color: #d0ff8b;
+  color: #003049;
+  border: 2px solid #a2f12a;
+  padding: 12px 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: relative;
+  transition: opacity 0.5s ease-out;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.cerrar-mensaje {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #003049;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.seccion-cancha {
+  background-color: #fffdf7;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cancha-info {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.imagen-cancha img {
+  max-width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.datos-cancha {
+  font-size: 1rem;
+  color: #222;
+  text-align: left;
+  max-width: 800px;
+  line-height: 1.5;
+}
+
+.datos-cancha a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.datos-cancha a:hover {
+  text-decoration: underline;
+}
+
+.mapa-cancha iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  border: 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.boton-mapa {
+  display: inline-block;
+  background-color: #1e40af; /* Azul fuerte */
+  color: white;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: background 0.3s ease;
+}
+
+.boton-mapa:hover {
+  background-color: #2563eb; /* Azul más claro */
+}
+
+.seccion-ubicacion {
+  padding: 2rem;
+  background-color: #fffef9;
+}
+
+.contenedor-ubicacion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.info-cancha {
+  flex: 1 1 40%;
+  max-width: 500px;
+}
+
+.mapa-cancha {
+  flex: 1 1 50%;
+  min-width: 300px;
+}
+
+.boton-mapa {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #1e3a8a;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.boton-mapa:hover {
+  background-color: #2746b0;
+}
