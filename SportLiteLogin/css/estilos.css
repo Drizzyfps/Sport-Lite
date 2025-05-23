@@ -1,0 +1,697 @@
+/* ESTILOS GENERALES */
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor-login-sportlite, .registro-contenedor-sportlite, .sl-contenedor-principal {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+}
+
+/* SECCIÓN DE LOGIN */
+
+.titulo-login-sportlite {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.formulario-login-sportlite {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo-login-sportlite {
+    text-align: left;
+}
+
+.etiqueta-login-sportlite {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.input-login-sportlite {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+}
+
+.boton-login-sportlite {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-login-sportlite:hover {
+    background-color: #0056b3;
+}
+
+.opciones-login-sportlite > div, .opciones-registro-sportlite > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.opciones-login-sportlite .separador-login-sportlite,
+.opciones-registro-sportlite .separador-registro-sportlite {
+    margin: 0;
+}
+
+.opciones-login-sportlite .separador-login-sportlite::before,
+.opciones-login-sportlite .separador-login-sportlite::after,
+.opciones-registro-sportlite .separador-registro-sportlite::before,
+.opciones-registro-sportlite .separador-registro-sportlite::after {
+    display: none;
+}
+
+.opciones-login-sportlite .separador-login-sportlite span,
+.opciones-registro-sportlite .separador-registro-sportlite span {
+    background-color: transparent;
+    padding: 0;
+}
+
+.boton-google-login-sportlite, .boton-facebook-login-sportlite,
+.boton-google-registro-sportlite, .boton-facebook-registro-sportlite {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0;
+}
+
+.boton-google-login-sportlite, .boton-google-registro-sportlite {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.boton-google-login-sportlite:hover, .boton-google-registro-sportlite:hover {
+    background-color: #f0f0f0;
+}
+
+.boton-facebook-login-sportlite, .boton-facebook-registro-sportlite {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+}
+
+.boton-facebook-login-sportlite:hover, .boton-facebook-registro-sportlite:hover {
+    background-color: #0d4ca6;
+}
+
+.icono-google-login-sportlite, .icono-facebook-login-sportlite,
+.icono-google-registro-sportlite, .icono-facebook-registro-sportlite {
+    width: 18px;
+    height: 18px;
+}
+
+.registro-login-sportlite {
+    margin-top: 20px;
+    color: #777;
+}
+
+.enlace-registro-login-sportlite {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.enlace-registro-login-sportlite:hover {
+    text-decoration: underline;
+}
+
+.mensaje-error-login {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.mensaje-exito-login {
+    color: #28a745;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* SECCIÓN DE REGISTRO */
+
+.titulo-registro-sportlite {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.formulario-registro-sportlite {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo-registro-sportlite {
+    text-align: left;
+}
+
+.etiqueta-registro-sportlite {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.input-registro-sportlite {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+}
+
+.boton-registro-sportlite {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-registro-sportlite:hover {
+    background-color: #1e7e34;
+}
+
+.opciones-registro-sportlite {
+    margin-top: 20px;
+}
+
+.login-registro-sportlite {
+    margin-top: 20px;
+    color: #777;
+}
+
+.enlace-login-registro-sportlite {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.enlace-login-registro-sportlite:hover {
+    text-decoration: underline;
+}
+
+.mensaje-error-registro {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* ESTILOS PARA LA PÁGINA PRINCIPAL (index.php) */
+
+.sl-contenedor-principal {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.sl-header {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+}
+
+.sl-header h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sl-header p {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.sl-enlace-logout {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #dc3545;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.sl-enlace-logout:hover {
+    background-color: #c82333;
+}
+
+.sl-main-contenido {
+    padding: 30px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.sl-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    color: #777;
+    font-size: 14px;
+}
+
+/* ESTILOS PARA RESTABLECER CONTRASEÑA */
+
+.contenedor-restablecer-contrasena {
+    background-color: var(--color-contenedor-login); 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.tarjeta-restablecer-contrasena {
+    background-color: var(--color-contenedor-login); 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2.titulo-restablecer-contrasena {
+    color: var(--color-texto-titulo-login);
+    margin-bottom: 20px;
+}
+
+p.instrucciones-restablecer-contrasena {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.formulario-restablecer-contrasena {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo-restablecer-contrasena {
+    text-align: left;
+}
+
+label.etiqueta-restablecer-contrasena {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color-texto-etiqueta-login);
+    font-weight: bold;
+}
+
+input.input-restablecer-contrasena {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-borde-input-login);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: var(--color-texto-input-login);
+}
+
+button.boton-restablecer-contrasena {
+    background-color: #ffc107; 
+    color: #333;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button.boton-restablecer-contrasena:hover {
+    background-color: #e0a800;
+}
+
+p.enlace-volver-login {
+    margin-top: 20px;
+}
+
+.enlace-volver-login a {
+    color: var(--color-enlace-registro-login);
+    text-decoration: none;
+}
+
+.enlace-volver-login a:hover {
+    text-decoration: var(--color-enlace-registro-login-hover);
+}
+
+.olvido-contrasena-login {
+    text-align: center; 
+    margin-bottom: 10px;
+}
+
+.enlace-olvido-contrasena-login {
+    color: var(--color-enlace-registro-login);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.enlace-olvido-contrasena-login:hover {
+    text-decoration: var(--color-enlace-registro-login-hover);
+}
+
+/* SECCIÓN DE NUEVA CONTRASEÑA */
+
+.reset-password-container {
+    --rp-container-bg: #f8f8f8; 
+    --rp-container-border: 1px solid #e0e0e0;
+    --rp-container-border-radius: 12px;
+    --rp-container-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: var(--rp-container-bg);
+    border: var(--rp-container-border);
+    border-radius: var(--rp-container-border-radius);
+    box-shadow: var(--rp-container-box-shadow);
+    text-align: center;
+}
+
+.reset-password-title {
+    --rp-title-color: #333;
+    --rp-title-margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    color: var(--rp-title-color);
+    margin-bottom: var(--rp-title-margin-bottom);
+}
+
+.reset-password-description {
+    --rp-description-color: #666;
+    --rp-description-margin-bottom: 30px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: var(--rp-description-color);
+    margin-bottom: var(--rp-description-margin-bottom);
+}
+
+.reset-password-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-label {
+    --rp-label-color: #555;
+    --rp-label-margin-bottom: 10px;
+    display: block;
+    margin-bottom: var(--rp-label-margin-bottom);
+    color: var(--rp-label-color);
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.form-input {
+    --rp-input-border: 1px solid #ddd;
+    --rp-input-border-radius: 8px;
+    --rp-input-color: #333;
+    padding: 15px;
+    border: var(--rp-input-border);
+    border-radius: var(--rp-input-border-radius);
+    box-sizing: border-box;
+    font-size: 1.1em;
+    color: var(--rp-input-color);
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    --rp-input-focus-border: #007bff;
+    --rp-input-focus-box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    border-color: var(--rp-input-focus-border);
+    outline: none;
+    box-shadow: var(--rp-input-focus-box-shadow);
+}
+
+.reset-password-button {
+    --rp-button-bg: #007bff;
+    --rp-button-color: white;
+    --rp-button-border-radius: 8px;
+    --rp-button-transition: background-color 0.3s ease;
+    padding: 15px 20px;
+    border: none;
+    border-radius: var(--rp-button-border-radius);
+    background-color: var(--rp-button-bg);
+    color: var(--rp-button-color);
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: var(--rp-button-transition);
+}
+
+.reset-password-button:hover {
+    --rp-button-hover-bg: #0056b3;
+    background-color: var(--rp-button-hover-bg);
+}
+
+.reset-password-link {
+    --rp-link-margin-top: 30px;
+    --rp-link-color: #777;
+    font-size: 0.95em;
+    margin-top: var(--rp-link-margin-top);
+    color: var(--rp-link-color);
+    text-align: center;
+}
+
+.reset-password-link a {
+    --rp-link-a-color: #007bff;
+    --rp-link-a-transition: color 0.3s ease;
+    color: var(--rp-link-a-color);
+    text-decoration: none;
+    transition: var(--rp-link-a-transition);
+}
+
+.reset-password-link a:hover {
+    --rp-link-a-hover-color: #0056b3;
+    color: var(--rp-link-a-hover-color);
+    text-decoration: underline;
+}
+
+.error-message {
+    --rp-error-bg: #fdecea;
+    --rp-error-color: #d9534f;
+    --rp-error-border: 1px solid #fcc2d0;
+    --rp-error-border-radius: 6px;
+    --rp-error-margin-bottom: 20px;
+    color: var(--rp-error-color);
+    background-color: var(--rp-error-bg);
+    padding: 12px;
+    border-radius: var(--rp-error-border-radius);
+    margin-bottom: var(--rp-error-margin-bottom);
+    border: var(--rp-error-border);
+    text-align: center;
+}
+
+.success-message {
+    --rp-success-bg: #d4edda;
+    --rp-success-color: #155724;
+    --rp-success-border: 1px solid #c3e6cb;
+    --rp-success-border-radius: 6px;
+    --rp-success-margin-bottom: 20px;
+    color: var(--rp-success-color);
+    background-color: var(--rp-success-bg);
+    padding: 12px;
+    border-radius: var(--rp-success-border-radius);
+    margin-bottom: var(--rp-success-margin-bottom);
+    border: var(--rp-success-border);
+    text-align: center;
+}
+
+
+/* ESTILOS ELEGANTES PARA RESTABLECER CONTRASEÑA */
+
+.reset-password-container {
+    background-color: #f8f8f8; 
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.reset-password-title {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+}
+
+.reset-password-description {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.reset-password-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.form-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.reset-password-button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.reset-password-button:hover {
+    background-color: #0056b3;
+}
+
+.reset-password-link {
+    margin-top: 30px;
+    font-size: 0.95em;
+}
+
+.reset-password-link a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.reset-password-link a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #dc3545;
+    background-color: #fdecea;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #fcc2d0;
+    text-align: center;
+}
+
+/* ESTILOS PARA LA PÁGINA DE RESTABLECIMIENTO ENVIADO */
+
+.reset-sent-container {
+    background-color: #f8f8f8;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.reset-sent-title {
+    color: #28a745; 
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.reset-sent-message {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.reset-sent-button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.reset-sent-button:hover {
+    background-color: #0056b3;
+}
+
