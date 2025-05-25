@@ -1,0 +1,256 @@
+/* Sección: Estilos generales del cuerpo y fondo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.background-radial-gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 10% 20%, rgb(0, 150, 200) 0%, rgb(0, 100, 150) 80%);
+    z-index: -1;
+}
+
+/* Sección: Estilos del contenedor principal del formulario */
+.container {
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 90%;
+    max-width: 550px;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+/* Sección: Estilos de Glassmorphism */
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Sección: Estilos de títulos y subtítulos */
+.form-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.form-subtitle {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #e0f2f7;
+}
+
+/* Sección: Estilos del formulario de reserva (Grid) */
+.reservation-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group:nth-child(7), /* Campo Celular */
+.form-group:nth-child(8) /* Campo Total a Pagar */ {
+    grid-column: span 2;
+}
+
+/* Sección: Estilos de etiquetas e inputs */
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #e0f2f7;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.3);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+/* Estilos para selectores deshabilitados */
+select:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos para las opciones de select */
+select option {
+    background: #007bb6;
+    color: #fff;
+}
+
+/* Sección: Estilos generales de los botones */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Estilos del botón de CONFIRMAR RESERVA */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    grid-column: span 2; /* Ocupa las dos columnas del grid del formulario */
+    justify-self: center; /* Centra el botón horizontalmente dentro de esas dos columnas */
+    max-width: 300px; /* Limita el ancho máximo del botón */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Estilos del contenedor del botón Volver / Cancelar */
+.back-button-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Estilos del botón Volver / Cancelar */
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    width: 100%;
+    max-width: 300px; /* Limita el ancho máximo del botón */
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+/* Sección: Estilos de mensajes (éxito/error) */
+.message {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.success-message {
+    background-color: rgba(76, 175, 80, 0.8);
+    border: 1px solid rgba(76, 175, 80, 1);
+    color: #fff;
+}
+
+.error-message {
+    background-color: rgba(244, 67, 54, 0.8);
+    border: 1px solid rgba(244, 67, 54, 1);
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Sección: Estilos del campo de costo total */
+.total-cost-display {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.total-cost-display label {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #e0f2f7;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.total-cost-display span {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #4CAF50;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-top: 5px;
+}
+
+/* Sección: Estilos responsivos */
+@media (max-width: 600px) {
+    .reservation-form {
+        grid-template-columns: 1fr;
+    }
+    .form-group:nth-child(7),
+    .form-group:nth-child(8) {
+        grid-column: span 1;
+    }
+    .container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+    .form-title {
+        font-size: 2em;
+    }
+    .btn-primary,
+    .btn-secondary {
+        grid-column: span 1;
+        max-width: 100%;
+    }
+}
